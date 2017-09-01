@@ -12,7 +12,7 @@ using ICSharpCode.SharpZipLib.Zip;
 using System.IO;
 using System.Runtime.InteropServices.ComTypes;
 using ITM_To_GPX.Utils;
-using DanielLibrary.GPXWriter.Main;
+using GPXWriter.Main;
 
 namespace ITM_To_GPX
 {

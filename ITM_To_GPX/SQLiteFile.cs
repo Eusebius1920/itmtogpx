@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using DanielLibrary.GPXWriter.Main;
-using DanielLibrary.GPXWriter.Utils;
+using GPXWriter.Main;
+using GPXWriter.Utils;
 using SQLiteWrapper;
 using System.Collections;
 
@@ -135,7 +135,7 @@ namespace ITM_To_GPX
                         gpxdatetime = gpxdatetime.ToUniversalTime();
 
                         //Punkt erstellen
-                        DanielLibrary.GPXWriter.Utils.Point pointtmp = new Point(latitude,longitude,elevation,gpxdatetime);
+                        GPXWriter.Utils.Point pointtmp = new Point(latitude,longitude,elevation,gpxdatetime);
 
                         //Punkt zum Segment hinzufügen
                         tracksegment.AddPoint(pointtmp);
@@ -210,7 +210,7 @@ namespace ITM_To_GPX
                     gpxdatetime = gpxdatetime.ToUniversalTime();
 
                     //Punkt erstellen
-                    DanielLibrary.GPXWriter.Utils.Point pointtmp = new Point(latitude, longitude, elevation, gpxdatetime);
+                    GPXWriter.Utils.Point pointtmp = new Point(latitude, longitude, elevation, gpxdatetime);
 
                     //Punkt zum Segment hinzufügen
                     gpxfile.AddPoint(pointtmp); 
