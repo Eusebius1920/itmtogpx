@@ -119,7 +119,7 @@ namespace ITM_To_GPX
                         latitude = (float) (datatableWP.Rows[i][9]);
                         longitude = (float) datatableWP.Rows[i][8];
                         elevation = (float) datatableWP.Rows[i][10];
-                        gpxdatetime = DateTime.FromFileTime((((long)(int)datatableGPS.Rows[i][2]) << 32)+(int)datatableGPS.Rows[i][3]);                       
+                        gpxdatetime = DateTime.FromFileTime((((long)(int)datatableGPS.Rows[i][2]) << 32)+(uint)(int)datatableGPS.Rows[i][3]);
 
                         //Wenn Sommerzeit war, dann ziehe eine Stunde ab
                         TimeZone localZone = TimeZone.CurrentTimeZone;
