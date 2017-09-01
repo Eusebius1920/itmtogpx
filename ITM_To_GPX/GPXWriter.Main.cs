@@ -86,7 +86,7 @@ namespace GPXWriter
                 _OutputFile.WriteStartDocument();
                 _OutputFile.WriteStartElement("gpx");
                 _OutputFile.WriteAttributeString("xmlns", "http://www.topografix.com/GPX/1/1");
-                _OutputFile.WriteAttributeString("creator", "Daniel Schlosser");
+                _OutputFile.WriteAttributeString("creator", "ITMtoGPX");
                 _OutputFile.WriteAttributeString("version", "v1.1.5");
                 _OutputFile.WriteAttributeString("xmlns:xsi","http://www.w3.org/2001/XMLSchema-instance");
                 _OutputFile.WriteAttributeString("xsi:schemaLocation", "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd");
